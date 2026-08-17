@@ -1,0 +1,34 @@
+exp_2_selection — diagnostics and ambiguity log
+============================================================
+
+Design parameters:
+  n=200, d=40, q=5, p=100, M_candidates=10
+  tilde_c=0.6061, theory_valid=True
+
+Selection frequency (fraction of reps oracle R chosen):
+  Naive-selected:  1.000
+  Split-selected:  1.000
+
+Ambiguities and implementation assumptions:
+
+  1. SmallestStatSelector selects argmin T_n over candidates.
+     T_n = compute_restriction_stat(B_hat, R, G, S_u).
+     Smaller T_n → restriction more plausible given data.
+     This is a FALLBACK RULE documented as an implementation
+     assumption; no selection rule is prescribed in the spec.
+
+  2. Trace correction:
+       Sigma_corr = (tau_u / tau_r) * Sigma_naive_sel
+       tau_u = tr(URE) / p    (mean eigenvalue of URE)
+       tau_r = tr(Sigma_naive_sel) / p
+     Corrects trace inflation/deflation but not eigenvectors.
+
+  3. Split-sample splits n obs into n1=n//2 (selection) and
+     n2=n-n1 (estimation).  n_eff for estimation is halved.
+
+  4. Sigma = I_p throughout.  True trace ratio = 1.0.
+     Deviation from 1.0 indicates scale bias.
+
+  5. Oracle restriction = candidates[0].  All true B are
+     generated in null(R_oracle) via B = N_R_oracle @ C.
+     Remaining M-1 candidates are independently random.

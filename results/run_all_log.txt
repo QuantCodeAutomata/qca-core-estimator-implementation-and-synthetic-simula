@@ -1,0 +1,255 @@
+nohup: ignoring input
+INFO q=2 → kappa_n=0 always → SSE+ ≡ URE-cov (shape Frobenius audit)
+INFO Gaussian: URE-cov=21.71  RRE-cov=21.56  URE-Tyler=20.77  RRE-Tyler=21.12  SSE+=21.71  (Tyler failures=0/40)
+INFO t_6: URE-cov=98.40  RRE-cov=98.19  URE-Tyler=32.88  RRE-Tyler=33.38  SSE+=98.40  (Tyler failures=0/40)
+INFO t_4: URE-cov=229.00  RRE-cov=229.39  URE-Tyler=42.87  RRE-Tyler=42.59  SSE+=229.00  (Tyler failures=0/40)
+INFO Attempting download from https://archive.ics.uci.edu/ml/machine-learning-databases/communities/communities.data
+INFO Download succeeded: 1994 rows x 128 cols
+INFO Preprocessed: X=(1994, 4)  Y=(1994, 102)  rank(X)=4
+INFO Dataset: N=1994, p=102, d=4
+INFO Training size n=120  (15 splits)...
+INFO n_train=120: 15/15 splits OK  (5.6s)
+INFO   Su: median_ll=-107.55  median_cond=792897  fail_rate=0.00  n=15
+INFO   LW: median_ll=-67.20  median_cond=140  fail_rate=0.00  n=15
+INFO   URE_cov: median_ll=-137.72  median_cond=329  fail_rate=0.00  n=15
+INFO   URE_Tyler: median_ll=-138.38  median_cond=273  fail_rate=0.00  n=15
+INFO Training size n=150  (15 splits)...
+INFO n_train=150: 15/15 splits OK  (3.7s)
+INFO   Su: median_ll=-68.59  median_cond=204333  fail_rate=0.00  n=15
+INFO   LW: median_ll=-61.11  median_cond=174  fail_rate=0.00  n=15
+INFO   URE_cov: median_ll=-105.57  median_cond=631  fail_rate=0.00  n=15
+INFO   URE_Tyler: median_ll=-104.86  median_cond=625  fail_rate=0.00  n=15
+INFO Training size n=200  (15 splits)...
+INFO n_train=200: 15/15 splits OK  (3.5s)
+INFO   Su: median_ll=-50.38  median_cond=121011  fail_rate=0.00  n=15
+INFO   LW: median_ll=-57.32  median_cond=217  fail_rate=0.00  n=15
+INFO   URE_cov: median_ll=-79.91  median_cond=1244  fail_rate=0.00  n=15
+INFO   URE_Tyler: median_ll=-78.58  median_cond=1124  fail_rate=0.00  n=15
+INFO Training size n=300  (15 splits)...
+INFO n_train=300: 15/15 splits OK  (4.4s)
+INFO   Su: median_ll=-38.35  median_cond=74517  fail_rate=0.00  n=15
+INFO   LW: median_ll=-49.55  median_cond=317  fail_rate=0.00  n=15
+INFO   URE_cov: median_ll=-54.87  median_cond=2438  fail_rate=0.00  n=15
+INFO   URE_Tyler: median_ll=-52.32  median_cond=2040  fail_rate=0.00  n=15
+INFO Leukemia dataset: no reliable plain-text public URL found. Generating synthetic proxy (N=248, probes=12625, subtypes=6).
+INFO Synthetic leukemia data: expression=(248, 12625), labels=(248,), subtypes=(array([0, 1, 2, 3, 4, 5]), array([41, 41, 41, 41, 41, 43]))
+INFO Loaded: N=248, probes=12625, subtypes=6
+INFO Training size n=130  (10 splits)...
+WARNING Did not converge within 500 iterations (last rel. change may exceed tol=1e-07).
+WARNING Did not converge within 500 iterations (last rel. change may exceed tol=1e-07).
+WARNING Did not converge within 500 iterations (last rel. change may exceed tol=1e-07).
+WARNING Did not converge within 500 iterations (last rel. change may exceed tol=1e-07).
+WARNING Did not converge within 500 iterations (last rel. change may exceed tol=1e-07).
+WARNING Did not converge within 500 iterations (last rel. change may exceed tol=1e-07).
+WARNING Did not converge within 500 iterations (last rel. change may exceed tol=1e-07).
+WARNING Did not converge within 500 iterations (last rel. change may exceed tol=1e-07).
+WARNING Did not converge within 500 iterations (last rel. change may exceed tol=1e-07).
+WARNING Did not converge within 500 iterations (last rel. change may exceed tol=1e-07).
+INFO n_train=130: 10/10 splits OK  (14.1s)
+INFO   Su: median_ll=-193.39  median_cond=2311266  fail_rate=0.00  n=10
+INFO   LW: median_ll=-34.59  median_cond=107  fail_rate=0.00  n=10
+INFO   URE_cov: median_ll=-331.50  median_cond=483  fail_rate=0.00  n=10
+INFO   URE_Tyler: median_ll=-328.92  median_cond=457  fail_rate=1.00  n=10
+INFO Training size n=160  (10 splits)...
+INFO n_train=160: 10/10 splits OK  (3.3s)
+INFO   Su: median_ll=-62.27  median_cond=37726  fail_rate=0.00  n=10
+INFO   LW: median_ll=-27.79  median_cond=130  fail_rate=0.00  n=10
+INFO   URE_cov: median_ll=-309.39  median_cond=34  fail_rate=0.00  n=10
+INFO   URE_Tyler: median_ll=-308.02  median_cond=33  fail_rate=0.00  n=10
+INFO Training size n=200  (10 splits)...
+INFO n_train=200: 10/10 splits OK  (2.7s)
+INFO   Su: median_ll=-35.20  median_cond=10619  fail_rate=0.00  n=10
+INFO   LW: median_ll=-21.39  median_cond=159  fail_rate=0.00  n=10
+INFO   URE_cov: median_ll=-293.53  median_cond=22  fail_rate=0.00  n=10
+INFO   URE_Tyler: median_ll=-292.88  median_cond=22  fail_rate=0.00  n=10
+========================================================================
+Master runner — n_reps=30, n_splits_4=15, n_splits_5=10
+========================================================================
+
+━━━ EXP 1: Synthetic Simulation ━━━
+========================================================================
+exp_1_synthetic — restricted robust covariance estimation study
+Results directory: /workspace/project/results  |  n_reps=30
+========================================================================
+
+─── Exp A: spectral robustness ───
+[exp_a] n=200, d=40, q=5, p=100, tilde_c=0.606, theory_valid=True
+[exp_a] Done → /workspace/project/results/fig_spectral_robustness.png
+
+─── Exp B: risk vs aspect ratio ───
+  [exp_b] c_in=0.5, p=100, tilde_c=0.606, tv=True
+  [exp_b] c_in=1.0, p=200, tilde_c=1.212, tv=False
+  [exp_b] c_in=2.0, p=400, tilde_c=2.424, tv=False
+[exp_b] Done → /workspace/project/results/table_1_risk_vs_c.csv, /workspace/project/results/fig_risk_vs_c.png
+
+─── Exp C: covariance structures ───
+  [exp_c] cov=banded, tilde_c=1.231, tv=False
+  [exp_c] cov=sparse, tilde_c=1.231, tv=False
+[exp_c] Done → /workspace/project/results/table_2_cov_structures.csv
+
+─── Exp D: misspecification ───
+[exp_d] n=200, d=40, q=5, p=200, tilde_c=1.212, tv=False
+  [exp_d] δ=0.0, URE_mean=49.2744
+  [exp_d] δ=0.5, URE_mean=49.2744
+  [exp_d] δ=1.0, URE_mean=49.2744
+  [exp_d] δ=2.0, URE_mean=49.2744
+  [exp_d] δ=4.0, URE_mean=49.2744
+[exp_d] Done → /workspace/project/results/fig_misspecification.png
+
+─── Exp E: gain vs restriction rank ───
+  [exp_e] q=3, theory=0.9816, empirical=0.9997
+  [exp_e] q=5, theory=0.9697, empirical=0.8802
+  [exp_e] q=10, theory=0.9412, empirical=0.9136
+  [exp_e] q=20, theory=0.8889, empirical=0.9078
+[exp_e] Done → /workspace/project/results/fig_gain_vs_rank.png
+
+─── Exp F: bias-variance decomposition ───
+[exp_f] n=200, d=40, q=5, p=100, tilde_c=0.606, tv=True
+  [exp_f] Gaussian done.
+  [exp_f] t₆ done.
+[exp_f] Done → /workspace/project/results/fig_bias_variance.png
+
+─── Exp G: entrywise heatmap ───
+[exp_g] n=80, d=16, q=5, p=60, tilde_c=0.870, tv=True
+  [exp_g] URE: psd=True, cond=54.27, wf=172.0543
+  [exp_g] RRE: psd=True, cond=8.39, wf=83.7506
+  [exp_g] SSE+: psd=True, cond=53.94, wf=171.9941
+  [exp_g] URE-Tyler: psd=True, cond=55.32, wf=113.3438
+  [exp_g] RRE-Tyler: psd=True, cond=6.80, wf=62.6560
+[exp_g] Done → /workspace/project/results/fig_entrywise_heatmap.png
+
+========================================================================
+All experiments complete.  Output files in results/:
+  RESULTS.md
+  diagnostics.txt
+  diagnostics_exp2.txt
+  fig_bias_variance.png
+  fig_bias_variance_gaussian.png
+  fig_bias_variance_t6.png
+  fig_communities_ll.png
+  fig_entrywise_heatmap.png
+  fig_gain_vs_rank.png
+  fig_heatmap_RRE.png
+  fig_heatmap_RRE_Tyler.png
+  fig_heatmap_SSEplus.png
+  fig_heatmap_URE.png
+  fig_heatmap_URE_Tyler.png
+  fig_leukemia_ll.png
+  fig_misspecification.png
+  fig_risk_vs_c.png
+  fig_risk_vs_c_gaussian.png
+  fig_risk_vs_c_t11.png
+  fig_risk_vs_c_t6.png
+  fig_selection_trace_bias.png
+  fig_spectral_Sr_gaussian.png
+  fig_spectral_Sr_t11.png
+  fig_spectral_Sr_t6.png
+  fig_spectral_robustness.png
+  run_all_log.txt
+  table_1_risk_vs_c.csv
+  table_2_cov_structures.csv
+  table_3_gmanova.csv
+  table_4_communities.csv
+  table_5_leukemia.csv
+  table_selection_risk.csv
+========================================================================
+[exp1] done in 746.0s
+
+━━━ EXP 2: Post-Selection Correction ━━━
+[exp_2] n=200, d=40, q=5, p=100, M=10, tilde_c=0.606, theory_valid=True, n_reps=30
+  [exp_2] Oracle selection rate — naive: 1.000, split: 1.000
+         estimator  mean_wf_loss  se_wf_loss  mean_trace_ratio  se_trace_ratio  rel_risk
+               URE      4.164715    0.131889          0.979392        0.002968  1.000000
+ Oracle-restricted      3.962001    0.132259          0.980775        0.002468  0.951326
+    Naive-selected      3.962001    0.132259          0.980775        0.002468  0.951326
+    Split-selected     42.380786    0.203557          0.485379        0.003012 10.176156
+Corrected-selected      3.965703    0.133098          0.979392        0.002968  0.952215
+[exp_2] Done.  Table → /workspace/project/results/table_selection_risk.csv  Plot → /workspace/project/results/fig_selection_trace_bias.png
+[exp2] done in 11.7s
+
+━━━ EXP 3: GMANOVA ━━━
+
+=== Table 3: GMANOVA shape Frobenius risk x 100 ===
+           URE-cov  RRE-cov  URE-Tyler  RRE-Tyler    SSE+
+Error law                                                
+Gaussian     21.71    21.56      20.77      21.12   21.71
+t_6          98.40    98.19      32.88      33.38   98.40
+t_4         229.00   229.39      42.87      42.59  229.00
+[exp3] done in 19.2s
+
+━━━ EXP 4: Communities and Crime ━━━
+[exp4] done in 18.3s
+    n_train  estimator   median_ll     mean_ll    median_cond  failure_rate  n_ok
+0       120         Su -107.545348 -108.100389  792896.862488           0.0    15
+1       120         LW  -67.195271  -66.664041     139.583188           0.0    15
+2       120    URE_cov -137.721564 -138.411414     329.221459           0.0    15
+3       120  URE_Tyler -138.382397 -139.191625     273.077291           0.0    15
+4       150         Su  -68.591669  -69.248341  204333.330600           0.0    15
+5       150         LW  -61.108000  -62.172217     173.729629           0.0    15
+6       150    URE_cov -105.567974 -105.668618     631.238733           0.0    15
+7       150  URE_Tyler -104.863855 -107.012892     624.665060           0.0    15
+8       200         Su  -50.376594  -50.433642  121010.646764           0.0    15
+9       200         LW  -57.316627  -56.222497     217.023966           0.0    15
+10      200    URE_cov  -79.906443  -78.759677    1244.096538           0.0    15
+11      200  URE_Tyler  -78.584148  -78.256719    1124.045995           0.0    15
+12      300         Su  -38.346603  -38.133035   74516.841261           0.0    15
+13      300         LW  -49.552505  -49.096390     317.213465           0.0    15
+14      300    URE_cov  -54.869775  -54.660591    2438.406091           0.0    15
+15      300  URE_Tyler  -52.316824  -52.199254    2039.836060           0.0    15
+
+━━━ EXP 5: Leukemia ━━━
+[exp5] done in 20.3s
+    n_train  estimator   median_ll     mean_ll   median_cond  failure_rate  n_ok
+0       130         Su -193.393588 -207.408859  2.311266e+06           0.0    10
+1       130         LW  -34.586456  -34.298388  1.066227e+02           0.0    10
+2       130    URE_cov -331.502110 -331.936849  4.826249e+02           0.0    10
+3       130  URE_Tyler -328.923560 -329.710640  4.570520e+02           1.0    10
+4       160         Su  -62.271153  -62.744417  3.772634e+04           0.0    10
+5       160         LW  -27.792612  -28.028733  1.302349e+02           0.0    10
+6       160    URE_cov -309.387399 -308.570448  3.405787e+01           0.0    10
+7       160  URE_Tyler -308.020179 -307.571396  3.258146e+01           0.0    10
+8       200         Su  -35.198675  -35.334058  1.061909e+04           0.0    10
+9       200         LW  -21.394750  -21.882987  1.594256e+02           0.0    10
+10      200    URE_cov -293.532800 -293.307881  2.217106e+01           0.0    10
+11      200  URE_Tyler -292.882610 -293.125716  2.204916e+01           0.0    10
+
+━━━ Assembling RESULTS.md ━━━
+RESULTS.md written.
+
+========================================================================
+Output files in results/:
+  RESULTS.md                                             15588 bytes
+  diagnostics.txt                                          697 bytes
+  diagnostics_exp2.txt                                    1290 bytes
+  fig_bias_variance.png                                  54753 bytes
+  fig_bias_variance_gaussian.png                         55430 bytes
+  fig_bias_variance_t6.png                               56314 bytes
+  fig_communities_ll.png                                 62224 bytes
+  fig_entrywise_heatmap.png                             111012 bytes
+  fig_gain_vs_rank.png                                   68418 bytes
+  fig_heatmap_RRE.png                                    60852 bytes
+  fig_heatmap_RRE_Tyler.png                              61656 bytes
+  fig_heatmap_SSEplus.png                                63419 bytes
+  fig_heatmap_URE.png                                    63417 bytes
+  fig_heatmap_URE_Tyler.png                              64468 bytes
+  fig_leukemia_ll.png                                    46257 bytes
+  fig_misspecification.png                               65347 bytes
+  fig_risk_vs_c.png                                     126602 bytes
+  fig_risk_vs_c_gaussian.png                             80767 bytes
+  fig_risk_vs_c_t11.png                                  76841 bytes
+  fig_risk_vs_c_t6.png                                   70123 bytes
+  fig_selection_trace_bias.png                           98903 bytes
+  fig_spectral_Sr_gaussian.png                           60386 bytes
+  fig_spectral_Sr_t11.png                                51050 bytes
+  fig_spectral_Sr_t6.png                                 46579 bytes
+  fig_spectral_robustness.png                           227648 bytes
+  run_all_log.txt                                        12661 bytes
+  table_1_risk_vs_c.csv                                   3795 bytes
+  table_2_cov_structures.csv                               817 bytes
+  table_3_gmanova.csv                                      341 bytes
+  table_4_communities.csv                                 1246 bytes
+  table_5_leukemia.csv                                     957 bytes
+  table_selection_risk.csv                                 618 bytes
+========================================================================
+
+✓  All experiments completed successfully.

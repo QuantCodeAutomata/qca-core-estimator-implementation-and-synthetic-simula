@@ -1,0 +1,9 @@
+Diagnostics log — exp_1_synthetic
+========================================
+[exp_a] tilde_c=0.6061 theory_valid=True | V_r = S_u (unrestricted scatter); MP overlay uses tilde_c for S_r.
+[exp_b] | cov_type=identity, c_grid=[0.5, 1.0, 2.0]
+[exp_c] | t11 errors. banded: rho=0.5, bw=5. sparse: I+random.
+[exp_d] tilde_c=1.2121 theory_valid=False | Calibration with fixed X_calib. Gaussian errors. Relative risk = loss/URE.
+[exp_e] | Theoretical ratio exact under Gaussian/identity only. Empirical = mean(RRE)/mean(URE).
+[exp_f] tilde_c=0.6061 theory_valid=True | n_reps=30. Laws: Gaussian, t6.
+[exp_g] tilde_c=0.8696 theory_valid=True | Single realization. Banded Sigma (rho=0.5, bw=5). t11 errors.
